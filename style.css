@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979..2050&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #FECBEA;
+    color: white;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: #000000;
+    padding: 2% 5% 2% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.375rem;
+}
+
+.logo_cabecalho {
+    flex-shrink: 0;
+}
+
+.logo_cabecalho img {
+    width: 10%;
+    min-width: 3.75rem;
+    height: auto;
+}
+
+.logo_cabecalho img:hover {
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+
+}
+
+/* MENU */
+.cabecalho_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.75rem;
+    flex: 1;
+}
+
+.cabecalho_menu_link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #F3EFE4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cabecalho_menu_link:hover {
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    color: #FECBEA;
+}
+
+/* BARRA DE PESQUISA */
+.cabecalho_pesquisar_item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.cabecalho_pesquisar_item form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar_input {
+    padding: 0.625rem 2.8125rem 0.625rem 1.25rem;
+    border-radius: 1.25rem;
+    border: 0.125rem solid #FECBEA;
+    background-color: #F3EFE4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 18.75rem;
+    outline: none;
+}
+
+.pesquisar_input:focus {
+    border-color: #76070D;
+    box-shadow: 0 0 0.5rem rgba(118, 7, 13, 0.3);
+}
+
+.pesquisar_botao {
+    position: absolute;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.pesquisar_botao:hover {
+    transform: scale(1.1);
+}
+
+.pesquisar_icone {
+    width: 1.25rem;
+    height: 1.25rem;
+    object-fit: contain;
+}
+
+/* GERAL */
+.conteiner {
+    display: flex;
+    flex-direction: column;
+}
+
+/* INICIO */
+.conteiner_inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 5rem;
+}
+
+.conteiner_inicio_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0%;
+}
+
+.conteiner_inicio_logo img {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+}
+
+.conteiner_inicio_botao_whatsapp {
+    background-color: #290B0B;
+    width: 17.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #F3EFE4;
+    text-decoration: none;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    fill: #F3EFE4;
+}
+
+.conteiner_inicio_botao_whatsapp:hover {
+    background-color: #76070D;
+    color: #F3EFE4;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* SOBRE */
+.conteiner_sessao_sobre {
+    background-color: #F3EFE4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+    gap: 1.875rem;
+}
+
+.titulo_1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.titulo_2 {
+    font-family: 'climate crisis';
+    font-size: 3.75rem;
+    font-weight: 500;
+}
+
+.conteiner_sessao_sobre_caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 2.5rem 2.1875rem;
+    background-color: #76070D;
+    border-radius: 1.25rem;
+    width: 100%;
+    max-width: 39.8125rem;
+    min-height: 31.25rem;
+    margin-left: 5%;
+    box-shadow: -1.125rem 1.75rem 2.075rem 0 rgba(0, 0, 0, 0.42);
+}
+
+.paragrafo_1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+.paragrafo_2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+.conteiner_sessao_sobre_camera_img {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+.conteiner_sessao_sobre_caixa:hover {
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* PORTIFÓLIO */
+.conteiner_sessao_portifolio {
+    background-image: url('./IMAGENS/FUNDO_VERMELHO.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 62.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.375rem;
+    padding: 3rem 0.625rem;
+}
+
+.conteiner_sessao_portifolio_titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 2rem;
+    background-color: #76070D;
+    border-radius: 1.25rem;
+    width: 80%;
+    max-width: 31.25rem;
+    min-height: 3.75rem;
+    margin-left: 5%;
+    align-items: center;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+}
+
+.conteiner_sessao_potifolio_img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5.625rem;
+}
+
+.conteiner_sessao_portifolio_img1,
+.conteiner_sessao_porifolio_img2,
+.conteiner_sessao_porifolio_img3 {
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    width: 100%;
+    max-width: 21.875rem;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.conteiner_sessao_portifolio_img1:hover,
+.conteiner_sessao_porifolio_img2:hover,
+.conteiner_sessao_porifolio_img3:hover {
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.conteiner_sessao_portifolio_botaovm {
+    background-color: #FECBEA;
+    width: 17.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    fill: #FECBEA;
+}
+
+.conteiner_sessao_portifolio_botaovm:hover {
+    background-color: #290B0B;
+    color: #FECBEA;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* OVERLAY DOS ITENS DO PORTFÓLIO */
+.conteiner_sessao_potifolio_img .portfolio-item {
+    position: relative;
+    display: inline-block;
+}
+
+.conteiner_sessao_potifolio_img .portfolio-item img {
+    display: block;
+    width: 100%;
+    max-width: 21.875rem;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+.conteiner_sessao_potifolio_img .portfolio-item .overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    opacity: 0;
+    transition: background 0.28s ease, opacity 0.28s ease;
+    border-radius: 0.25rem;
+    pointer-events: none;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.conteiner_sessao_potifolio_img .portfolio-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.conteiner_sessao_potifolio_img .portfolio-item .overlay span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+}
+
+/* PLAYLIST */
+.conteiner_sessao_playlist {
+    background-color: #F3EFE4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    gap: 3.75rem;
+}
+
+.conteiner_sessao_playlist_celular {
+    width: 35%;
+    max-width: 25rem;
+    height: auto;
+    display: block;
+}
+
+.conteiner_sessao_playlist_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 31.25rem;
+}
+
+.titulo_playlist_1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #290B0B;
+    margin-bottom: -0.625rem;
+}
+
+.titulo_playlist_2 {
+    font-family: 'climate crisis';
+    font-size: 5rem;
+    font-weight: 500;
+    color: #290B0B;
+    margin-top: -8%;
+}
+
+.paragrafo_playlist {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: #290B0B;
+}
+
+.conteiner_sessao_playlist_botao {
+    background-color: #76070D;
+    width: 17.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #F3EFE4;
+    text-decoration: none;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    fill: #76070D;
+}
+
+.conteiner_sessao_playlist_botao:hover {
+    background-color: #F3EFE4;
+    color: #290B0B;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #000000;
+    color: #F3EFE4;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1.875rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  MOBILE (480px)  */
+
+@media (max-width: 480px) {
+    
+    /* HEADER */
+    .cabecalho {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3);
+    }
+
+    body {
+        padding-top: 5rem;
+    }
+
+    .logo_cabecalho img {
+        width: 2.5rem;
+        min-width: 2.5rem;
+    }
+
+    /* MENU */
+    .cabecalho_menu {
+        display: none;
+    }
+
+    /* BARRA DE PESQUISA */
+    .cabecalho_pesquisar_item {
+        flex: 1;
+        max-width: 60%;
+    }
+
+    .pesquisar_input {
+        max-width: 100%;
+        font-size: 0.875rem;
+        padding: 0.5rem 2.5rem 0.5rem 1rem;
+    }
+
+    .pesquisar_icone {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    
+    /* INICIO */
+    .conteiner_inicio {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+
+    .conteiner_inicio_logo {
+        padding: 3% 0%;
+    }
+
+    .conteiner_inicio_logo img {
+        width: 100%;
+    }
+
+    .conteiner_inicio_botao_whatsapp {
+        width: 100%;
+        max-width: 15rem;
+        font-size: 1.25rem;
+    }
+
+    /* SOBRE */
+    .conteiner_sessao_sobre {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .titulo_1 {
+        font-size: 2.5rem;
+    }
+
+    .titulo_2 {
+        font-size: 2.5rem;
+    }
+
+    .conteiner_sessao_sobre_caixa {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .paragrafo_1,
+    .paragrafo_2 {
+        font-size: 1.125rem;
+    }
+
+    .conteiner_sessao_sobre_camera_img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* PORTFÓLIO */
+    .conteiner_sessao_portifolio {
+        flex-direction: column;
+        min-height: auto;
+        padding: 2rem 1rem;
+        gap: 2.5rem;
+    }
+
+    .conteiner_sessao_portifolio_titulo {
+        font-size: 2rem;
+        width: 90%;
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+
+    .conteiner_sessao_potifolio_img {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .conteiner_sessao_portifolio_img1,
+    .conteiner_sessao_porifolio_img2,
+    .conteiner_sessao_porifolio_img3 {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .conteiner_sessao_potifolio_img .portfolio-item img {
+        max-width: 100%;
+    }
+
+    .conteiner_sessao_potifolio_img .portfolio-item .overlay span {
+        font-size: 0.75rem;
+    }
+
+    .conteiner_sessao_portifolio_botaovm {
+        width: 100%;
+        max-width: 15rem;
+        font-size: 1.25rem;
+    }
+
+    /* PLAYLIST */
+    .conteiner_sessao_playlist {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .conteiner_sessao_playlist_celular {
+        width: 60%;
+        max-width: 15rem;
+    }
+
+    .conteiner_sessao_playlist_conteudo {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .titulo_playlist_1 {
+        font-size: 1.75rem;
+    }
+
+    .titulo_playlist_2 {
+        font-size: 3rem;
+        margin-top: -5%;
+    }
+
+    .paragrafo_playlist {
+        font-size: 1.25rem;
+    }
+
+    .conteiner_sessao_playlist_botao {
+        width: 100%;
+        max-width: 15rem;
+        font-size: 1.25rem;
+    }
+
+    /* RODAPÉ */
+    .rodape {
+        font-size: 1rem;
+        padding: 1.5rem 1rem;
+    }
+}
