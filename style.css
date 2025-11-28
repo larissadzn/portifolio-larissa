@@ -15,7 +15,7 @@ body {
 /* CABEÇALHO */
 .cabecalho {
     background-color: #000000;
-    padding: 2% 5% 2% 2%;
+    padding: 2% 5% 2% 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,6 +46,10 @@ body {
     align-items: center;
     gap: 3.75rem;
     flex: 1;
+}
+
+.cabecalho__menu__item {
+    display: none;
 }
 
 .cabecalho_menu_link {
@@ -351,6 +355,7 @@ body {
     font-size: 0.7rem;
     letter-spacing: 0.025rem;
     text-transform: uppercase;
+    padding: 4% 4%;
 }
 
 /* PLAYLIST */
@@ -435,11 +440,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 /*  MOBILE (480px)  */
 
 @media (max-width: 480px) {
     
-    /* HEADER */
+    
+    /* CABECALHO */
     .cabecalho {
         position: fixed;
         top: 0;
@@ -451,7 +458,13 @@ body {
         padding: 1rem;
         gap: 1rem;
         box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3);
+        z-index: 999;
     }
+
+    .cabecalho__menu__item {
+        display: flex;
+    }
+
 
     body {
         padding-top: 5rem;
@@ -499,6 +512,10 @@ body {
         width: 100%;
     }
 
+    .conteiner_inicio_botao{
+        width: 50%;
+    }
+
     .conteiner_inicio_botao_whatsapp {
         width: 100%;
         max-width: 15rem;
@@ -522,7 +539,7 @@ body {
 
     .conteiner_sessao_sobre_caixa {
         margin-left: 0;
-        width: 100%;
+        width: 80%;
         max-width: 100%;
         min-height: auto;
         padding: 2rem 1.5rem;
@@ -572,6 +589,10 @@ body {
 
     .conteiner_sessao_potifolio_img .portfolio-item .overlay span {
         font-size: 0.75rem;
+    }
+
+    .container_portifolio_botaovm {
+        width: 50%;
     }
 
     .conteiner_sessao_portifolio_botaovm {
